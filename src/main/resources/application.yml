@@ -1,0 +1,16 @@
+
+server:
+  port: 8081
+spring:
+  application:
+    name: alipayTest
+    #连接数据库信息
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/userdb?useSSL=false&useUnicode=true&characterEncoding=UTF-8&serverTimezone=GMT
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 888888
+#开启日志
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
